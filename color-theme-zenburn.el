@@ -85,6 +85,14 @@
 (defvar zenburn-blue-5 "#366060")
 (defvar zenburn-magenta "#dc8cc3")
 
+;; custom colors
+(defvar zenburn-bg-m1 "#1e2320")
+(defvar zenburn-bg-m2 "#233323")
+(defvar zenburn-blue-m1 "#0000ff")
+(defvar zenburn-yellow-m1 "#ffff00")
+(defvar zenburn-green-m1 "#71d3b4")
+(defvar zenburn-red-m1 "#ff0000")
+
 (eval-after-load 'term
   '(setq ansi-term-color-vector
          (vector 'unspecified zenburn-bg
@@ -140,20 +148,20 @@
      (match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 
      ;; faces used by isearch
-     (isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+     (isearch ((t (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
      (isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-     (lazy-highlight ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
+     (lazy-highlight ((t (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
 
      (menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
      (minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
      (mode-line
-      ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-1))))
+      ((t (:foreground ,zenburn-green+1 :background ,zenburn-bg-m1))))
      (mode-line-buffer-id ((t (:inherit zenburn-strong-1-face))))
      (mode-line-inactive
       ((t (:foreground ,zenburn-green-1  :background ,zenburn-bg-1))))
-     (region ((t (:background ,zenburn-bg-1))))
+     (region ((t (:foreground ,zenburn-green-m1 :background ,zenburn-bg-m2))))
      (secondary-selection ((t (:background ,zenburn-bg+2))))
-     (trailing-whitespace ((t (:background ,zenburn-red))))
+     (trailing-whitespace ((t (:background ,zenburn-red-m1))))
      (vertical-border ((t (:foreground ,zenburn-fg))))
 
      ;;; font lock
