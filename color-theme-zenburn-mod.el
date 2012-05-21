@@ -102,10 +102,10 @@
                  ;; dirty fix
                  "white")))
 
-(defun color-theme-zenburn ()
+(defun color-theme-zenburn-mod ()
   (interactive)
   (color-theme-install
-   `(color-theme-zenburn
+   `(color-theme-zenburn-mod
      ;;; color-theme mapping
      ((foreground-color . ,zenburn-fg)
       (background-color . ,zenburn-bg)
@@ -509,10 +509,10 @@
      (wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
      (wl-highlight-summary-displaying-face ((t (:underline t :weight bold)))))))
 
-(add-to-list 'color-themes '(color-theme-zenburn
+(add-to-list 'color-themes '(color-theme-zenburn-mod
                              "Zenburn"
                              "Bozhidar Batsov <bozhidar.batsov@gmail.com"))
 
-(provide 'color-theme-zenburn)
+(provide 'color-theme-zenburn-mod)
 
 ;;; color-theme-zenburn.el ends here.
