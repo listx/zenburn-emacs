@@ -90,6 +90,7 @@
 (defvar zenburn-yellow-m1 "#ffff00")
 (defvar zenburn-green-m1 "#71d3b4")
 (defvar zenburn-red-m1 "#ff0000")
+(defvar zenburn-yellow+1 "#dfdfbf")
 
 (eval-after-load 'term
   '(setq ansi-term-color-vector
@@ -113,8 +114,10 @@
      ;;; define some reusable zenburn faces that we can inherit from afterwards
      (zenburn-strong-1-face ((t (:foreground ,zenburn-yellow :weight bold))))
      (zenburn-strong-2-face ((t (:foreground ,zenburn-orange :weight bold))))
-     (zenburn-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
-     (zenburn-error-face ((t (:foreground ,zenburn-red-1 :weight bold :underline t))))
+     (zenburn-strong-3-face ((t (:foreground ,zenburn-yellow+1 :weight bold))))
+     (zenburn-warning-face ((t (:foreground ,zenburn-yellow-1 :weight bold))))
+     (zenburn-error-face ((t (:foreground ,zenburn-red-1 :weight bold))))
+     (zenburn-error-2-face ((t (:foreground ,zenburn-red+1 :weight bold))))
 
      ;;; basic coloring
      (default ((t (:foreground ,zenburn-fg))))
@@ -166,17 +169,19 @@
      (font-lock-builtin-face ((t (:foreground ,zenburn-blue))))
      (font-lock-comment-face ((t (:foreground ,zenburn-green))))
      (font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green))))
-     (font-lock-constant-face ((t (:foreground ,zenburn-green+4))))
+     (font-lock-constant-face ((t (:inherit zenburn-error-2-face))))
      (font-lock-doc-face ((t (:foreground ,zenburn-green+1))))
      (font-lock-doc-string-face ((t (:foreground ,zenburn-blue+1))))
-     (font-lock-function-name-face ((t (:foreground ,zenburn-blue))))
+     (font-lock-function-name-face ((t (:foreground ,zenburn-yellow))))
      (font-lock-keyword-face ((t (:inherit zenburn-strong-1-face))))
-     (font-lock-negation-char-face ((t (:foreground ,zenburn-fg))))
+     (font-lock-negation-char-face ((t (:inherit zenburn-strong-1-face))))
      (font-lock-preprocessor-face ((t (:foreground ,zenburn-blue))))
      (font-lock-string-face ((t (:foreground ,zenburn-red))))
-     (font-lock-type-face ((t (:foreground ,zenburn-blue))))
-     (font-lock-variable-name-face ((t (:foreground ,zenburn-orange))))
+     (font-lock-type-face ((t (:inherit zenburn-strong-3-face))))
+     (font-lock-variable-name-face ((t (:foreground ,zenburn-yellow))))
      (font-lock-warning-face ((t (:inherit zenburn-warning-face))))
+     (font-lock-pseudo-keyword-face ((t (:inherit zenburn-strong-2-face))))
+     (font-lock-operator-face ((t (:inherit zenburn-strong-3-face))))
 
      (c-annotation-face ((t (:inherit font-lock-constant-face))))
 
@@ -475,8 +480,8 @@
      (rst-level-6-face ((t (:foreground ,zenburn-green-1))))
 
      ;; show-paren
-     (show-paren-mismatch ((t (:foreground ,zenburn-red-3 :weight bold))))
-     (show-paren-match ((t (:foreground ,zenburn-blue-1 :weight bold))))
+     (show-paren-mismatch ((t (:background ,zenburn-red-3 :weight bold))))
+     (show-paren-match ((t (:background ,zenburn-blue :weight bold))))
 
      ;; wanderlust
      (wl-highlight-folder-few-face ((t (:foreground ,zenburn-red-2))))
