@@ -53,12 +53,10 @@
 ;; color definitions
 ;; colors with +x are lighter, colors with -x are darker
 (defvar zenburn-fg "#dcdccc")
-(defvar zenburn-fg-1 "#656555")
-(defvar zenburn-bg-1 "#2b2b2b")
+(defvar zenburn-bg-1 "#282828")
 (defvar zenburn-bg "#3f3f3f")
 (defvar zenburn-bg+1 "#4f4f4f")
 (defvar zenburn-bg+2 "#5f5f5f")
-(defvar zenburn-bg+3 "#6f6f6f")
 (defvar zenburn-red+1 "#dca3a3")
 (defvar zenburn-red "#cc9393")
 (defvar zenburn-red-1 "#bc8383")
@@ -66,6 +64,7 @@
 (defvar zenburn-red-3 "#9c6363")
 (defvar zenburn-red-4 "#8c5353")
 (defvar zenburn-orange "#dfaf8f")
+(defvar zenburn-orange+1 "#ffc9a4")
 (defvar zenburn-yellow "#f0dfaf")
 (defvar zenburn-yellow-1 "#e0cf9f")
 (defvar zenburn-yellow-2 "#d0bf8f")
@@ -82,7 +81,6 @@
 (defvar zenburn-blue-2 "#6ca0a3")
 (defvar zenburn-blue-3 "#5c888b")
 (defvar zenburn-blue-4 "#4c7073")
-(defvar zenburn-blue-5 "#366060")
 (defvar zenburn-magenta "#dc8cc3")
 
 ;; custom colors
@@ -191,10 +189,10 @@
      (font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
 
      ;; auto-complete
-     (ac-candidate-face ((t (:background ,zenburn-bg+3 :foreground "black"))))
+     (ac-candidate-face ((t (:background ,zenburn-bg+2 :foreground "black"))))
      (ac-selection-face ((t (:background ,zenburn-blue-4 :foreground ,zenburn-fg))))
      (popup-tip-face ((t (:background ,zenburn-yellow-2 :foreground "black"))))
-     (popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
+     (popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-4))))
      (popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
      (popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
 
@@ -344,7 +342,7 @@
 
 
      ;; linum-mode
-     (linum ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg-1))))
+     (linum ((t (:foreground ,zenburn-bg+2 :background ,zenburn-bg-1))))
 
      ;; magit
      (magit-section-title ((t (:inherit zenburn-strong-1-face))))
