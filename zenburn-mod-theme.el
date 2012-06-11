@@ -1,4 +1,4 @@
-;;; zenburn-theme.el --- A low contrast color theme for Emacs.
+;;; zenburn-mod-theme.el --- A low contrast color theme for Emacs.
 
 ;; Copyright (C) 2011 Bozhidar Batsov
 
@@ -44,7 +44,7 @@
 ;; is based.
 ;;
 ;;; Code
-(deftheme zenburn "The Zenburn color theme")
+(deftheme zenburn-mod "The Zenburn color theme")
 
 (let ((class '((class color) (min-colors 89)))
       ;; Zenburn palette
@@ -532,7 +532,7 @@
 
   ;;; custom theme variables
   (custom-theme-set-variables
-   'zenburn
+   'zenburn-mod
    `(ansi-color-names-vector [,zenburn-bg ,zenburn-red ,zenburn-green ,zenburn-yellow
                                           ,zenburn-blue ,zenburn-magenta ,zenburn-cyan ,zenburn-fg])
 
@@ -544,10 +544,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'zenburn)
+(provide-theme 'zenburn-mod)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; zenburn-theme.el ends here.
+;;; zenburn-mod-theme.el ends here.
