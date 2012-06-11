@@ -91,7 +91,7 @@
       (zenburn-red-m1 "#ff0000")
       (zenburn-yellow+1 "#dfdfbf"))
   (custom-theme-set-faces
-   'zenburn
+   'zenburn-mod
    '(button ((t (:underline t))))
    `(link ((,class (:foreground ,zenburn-yellow :underline t :weight bold))))
    `(link-visited ((,class (:foreground ,zenburn-yellow-2 :underline t :weight normal))))
