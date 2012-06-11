@@ -82,6 +82,14 @@
       (zenburn-blue-4 "#4c7073")
       (zenburn-blue-5 "#366060")
       (zenburn-magenta "#dc8cc3"))
+      ;; custom colors
+      (zenburn-bg-m1 "#1e2320")
+      (zenburn-bg-m2 "#233323")
+      (zenburn-blue-m1 "#0000ff")
+      (zenburn-yellow-m1 "#ffff00")
+      (zenburn-green-m1 "#71d3b4")
+      (zenburn-red-m1 "#ff0000")
+      (zenburn-yellow+1 "#dfdfbf")
   (custom-theme-set-faces
    'zenburn
    '(button ((t (:underline t))))
@@ -119,24 +127,24 @@
    `(match ((,class (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(isearch ((,class (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
    `(isearch-fail ((,class (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(lazy-highlight ((,class (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
+   `(lazy-highlight ((,class (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
 
    `(menu ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((,class (:foreground ,zenburn-yellow))))
    `(mode-line
      ((,class (:foreground ,zenburn-green+1
-                           :background ,zenburn-bg-1
+                           :background ,zenburn-bg-m1
                            :box (:line-width -1 :style released-button)))))
    `(mode-line-buffer-id ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((,class (:foreground ,zenburn-green-1
                            :background ,zenburn-bg-05
                            :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:background ,zenburn-bg-1))))
+   `(region ((,class (:foreground ,zenburn-green-m1 :background ,zenburn-bg-m2))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
-   `(trailing-whitespace ((,class (:background ,zenburn-red))))
+   `(trailing-whitespace ((,class (:background ,zenburn-red-m1))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
 
    ;;; font lock
@@ -146,14 +154,21 @@
    `(font-lock-constant-face ((,class (:foreground ,zenburn-green+4))))
    `(font-lock-doc-face ((,class (:foreground ,zenburn-green+1))))
    `(font-lock-doc-string-face ((,class (:foreground ,zenburn-blue+1))))
-   `(font-lock-function-name-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-function-name-face ((,class (:foreground ,zenburn-yellow))))
    `(font-lock-keyword-face ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-negation-char-face ((,class (:foreground ,zenburn-fg))))
    `(font-lock-preprocessor-face ((,class (:foreground ,zenburn-blue))))
    `(font-lock-string-face ((,class (:foreground ,zenburn-red))))
-   `(font-lock-type-face ((,class (:foreground ,zenburn-blue))))
-   `(font-lock-variable-name-face ((,class (:foreground ,zenburn-orange))))
-   `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold :underline t))))
+   `(font-lock-type-face ((,class (:foreground ,zenburn-yellow+1 :weight bold))))
+   `(font-lock-variable-name-face ((,class (:foreground ,zenburn-yellow))))
+   `(font-lock-warning-face ((,class (:foreground ,zenburn-yellow-1 :weight bold))))
+   `(font-lock-pseudo-keyword-face ((,class (:foreground ,zenburn-orange :weight bold))))
+   `(font-lock-operator-face ((,class (:foreground ,zenburn-yellow+1 :weight bold))))
+   ;;; custom font-lock faces for highlighting numbers (see README-mod)
+   `(font-lock-decimal-face ((,class (:foreground ,zenburn-blue))))
+   `(font-lock-hex-face ((,class (:foreground ,zenburn-blue :weight bold))))
+   `(font-lock-float-face ((,class (:foreground ,zenburn-magenta))))
+   `(font-lock-octal-face ((,class (:foreground ,zenburn-magenta :weight bold))))
 
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
