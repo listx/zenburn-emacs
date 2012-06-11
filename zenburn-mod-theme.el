@@ -81,7 +81,7 @@
       (zenburn-blue-3 "#5c888b")
       (zenburn-blue-4 "#4c7073")
       (zenburn-blue-5 "#366060")
-      (zenburn-magenta "#dc8cc3"))
+      (zenburn-magenta "#dc8cc3")
       ;; custom colors
       (zenburn-bg-m1 "#1e2320")
       (zenburn-bg-m2 "#233323")
@@ -89,7 +89,7 @@
       (zenburn-yellow-m1 "#ffff00")
       (zenburn-green-m1 "#71d3b4")
       (zenburn-red-m1 "#ff0000")
-      (zenburn-yellow+1 "#dfdfbf")
+      (zenburn-yellow+1 "#dfdfbf"))
   (custom-theme-set-faces
    'zenburn
    '(button ((t (:underline t))))
