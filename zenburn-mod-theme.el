@@ -154,7 +154,7 @@
    `(font-lock-constant-face ((,class (:foreground ,zenburn-red :weight bold))))
    `(font-lock-doc-face ((,class (:foreground ,zenburn-green+1))))
    `(font-lock-doc-string-face ((,class (:foreground ,zenburn-blue+1))))
-   `(font-lock-function-name-face ((,class (:foreground ,zenburn-yellow))))
+   `(font-lock-function-name-face ((,class (:foreground ,zenburn-fg))))
    `(font-lock-keyword-face ((,class (:foreground ,zenburn-yellow :weight bold))))
    `(font-lock-negation-char-face ((,class (:foreground ,zenburn-fg))))
    `(font-lock-preprocessor-face ((,class (:foreground ,zenburn-orange :weight bold))))
