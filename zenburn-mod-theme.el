@@ -57,6 +57,7 @@
       (zenburn-bg+1 "#4f4f4f")
       (zenburn-bg+2 "#5f5f5f")
       (zenburn-bg+3 "#6f6f6f")
+      (zenburn-red+2 "#f18c96")
       (zenburn-red+1 "#dca3a3")
       (zenburn-red "#cc9393")
       (zenburn-red-1 "#bc8383")
@@ -84,11 +85,6 @@
       (zenburn-magenta "#dc8cc3")
       ;; custom colors
       (zenburn-bg-m1 "#1e2320")
-      (zenburn-bg-m2 "#233323")
-      (zenburn-blue-m1 "#0000ff")
-      (zenburn-yellow-m1 "#ffff00")
-      (zenburn-green-m1 "#71d3b4")
-      (zenburn-red-m1 "#ff0000")
       (zenburn-yellow+1 "#dfdfbf"))
   (custom-theme-set-faces
    'zenburn-mod
@@ -127,9 +123,9 @@
    `(match ((,class (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((,class (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
+   `(isearch ((,class (:foreground ,zenburn-bg-1 :background ,zenburn-magenta))))
    `(isearch-fail ((,class (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(lazy-highlight ((,class (:foreground ,zenburn-blue-m1 :background ,zenburn-yellow-m1))))
+   `(lazy-highlight ((,class (:foreground ,zenburn-bg-1 :background ,zenburn-magenta))))
 
    `(menu ((,class (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((,class (:foreground ,zenburn-yellow))))
@@ -142,9 +138,9 @@
      ((,class (:foreground ,zenburn-green-1
                            :background ,zenburn-bg-05
                            :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:foreground ,zenburn-green-m1 :background ,zenburn-bg-m2))))
+   `(region ((,class (:foreground ,zenburn-bg-1 :background ,zenburn-magenta))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
-   `(trailing-whitespace ((,class (:background ,zenburn-red-m1))))
+   `(trailing-whitespace ((,class (:background ,zenburn-red+2))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
 
    ;;; font lock
