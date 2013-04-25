@@ -138,7 +138,7 @@
      ((,class (:foreground ,zenburn-green-1
                            :background ,zenburn-bg-05
                            :box (:line-width -1 :style released-button)))))
-   `(region ((,class (:foreground ,zenburn-bg-1 :background ,zenburn-magenta))))
+   `(region ((,class (:foreground ,zenburn-blue-5 :background ,zenburn-green+4))))
    `(secondary-selection ((,class (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((,class (:background ,zenburn-red+2))))
    `(vertical-border ((,class (:foreground ,zenburn-fg))))
